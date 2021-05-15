@@ -17,7 +17,7 @@ const NavBar = ({ props }) => {
                 <li>
                     <a href="#!">
                         <div className="logo-container">
-                            <img src={ logo } alt="logo" width="58" />
+                            <img src={ logo } alt="logo" width="60" />
                         </div>
                     </a>
                 </li>
