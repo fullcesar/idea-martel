@@ -1,8 +1,12 @@
+import ItemListContainer from "./components/itemlistcont";
 import NavBar from "./components/navbar";
 
 function App() {
   return (
-      <NavBar />
+      <>
+        <NavBar />
+        <ItemListContainer estilos={{'textAlign': 'center'}}>Greetings!</ItemListContainer>
+      </>
   );
 }
 
