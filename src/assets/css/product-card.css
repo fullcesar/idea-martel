@@ -1,0 +1,16 @@
+
+.contadorCont {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+input#cantidad {
+    width: 45px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    margin:0;
+}
+
+.input-field {margin:0; padding:0}
