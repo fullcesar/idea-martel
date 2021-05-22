@@ -7,7 +7,7 @@ function App() {
       <>
         <NavBar />
         <ItemListContainer estilos={{'textAlign': 'center'}}>Tienda</ItemListContainer>
-        <ItemCount stock="10" intial="1" />
+        <ItemCount stock="10" initial="1" />
       </>
   );
 }

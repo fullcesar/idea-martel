@@ -7,25 +7,28 @@ import "../assets/css/product-card.css";
 
 const ItemCount = (props) => {
     
-    let [initial, setInitial] = useState(1);
-    let [stock, setStock] = useState(10);
+    let [cantidad, setCantidad] = useState(props.initial);
 
     const actualizaCantidad = function (operacion) {
-        stock = Number(props.stock);
-        initial = Number(initial);
+        let stock = Number(props.stock);
+        cantidad = Number(cantidad);
 
-        console.log(operacion);
-        console.log(initial);
+        console.log(cantidad);
 
-        if(initial < 1) {
-            setInitial(1);
-        }else if(initial >= stock) {
-            setInitial(stock);
-        } else {
+        if(cantidad > stock) {
+            setCantidad(stock);
+            console.info ("cantidad supera el stock!");
+            return;
+        }else if (cantidad < props.initial) {
+            console.info ("cantidad no puede ser menor que el valor inicial!");
+            setCantidad(props.initial);
+            return;
+        }else {
+            console.info ("valor correcto: incrementar o decrementar");
             if(operacion=="agregar"){
-                setInitial(initial + 1);
+                setCantidad(cantidad + 1);
             } else if(operacion=="quitar") {
-                setInitial(initial - 1);
+                setCantidad(cantidad - 1);
             }
         }
 
@@ -41,6 +44,7 @@ const ItemCount = (props) => {
                 className="center-align"
                 actions={[
                     <Button
+                        id="btnAddToCart"
                         className="purple"
                         node="button"
                         style={{
@@ -66,6 +70,7 @@ const ItemCount = (props) => {
                             className="center-align"
                         >
                             <Button
+                                id="btnLess"
                                 className="purple"
                                 floating
                                 icon={<Icon>remove</Icon>}
@@ -80,7 +85,7 @@ const ItemCount = (props) => {
                             s={4}
                             className="center-align"
                         >
-                            <TextInput id="cantidad" type="number" value={initial} />
+                            <TextInput id="cantidad" type="number" value={cantidad} />
                         </Col>
 
                         <Col
@@ -88,6 +93,7 @@ const ItemCount = (props) => {
                             className="center-align"
                         >
                             <Button
+                                id="btnAdd"
                                 className="purple"
                                 floating
                                 icon={<Icon>add</Icon>}
