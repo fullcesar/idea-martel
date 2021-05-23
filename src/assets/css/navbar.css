@@ -1,7 +1,7 @@
 
 nav.mi-nav {
   color: #fff;
-  background-color: rgb(97, 74, 217);
+  background-color: rgb(156, 39, 176);
   width: 100%;
 }
 
@@ -15,6 +15,6 @@ nav.mi-nav {
 }
 
 .sidenav li>a:hover {
-  background-color: rgba(97, 74, 217,0.2);
-  color: rgb(97, 74, 217);
+  background-color: rgba(156, 39, 176,0.2);
+  color: rgb(156, 39, 176);
 }

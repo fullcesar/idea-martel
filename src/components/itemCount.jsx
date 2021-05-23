@@ -5,34 +5,13 @@ import React, { useState } from "react";
 import "../assets/css/product-card.css";
 
 
-const ItemCount = (props) => {
+const ItemCount = ({stock, initial}) => {
     
-    let [cantidad, setCantidad] = useState(props.initial);
+    const [cantidad, setCantidad] = useState(Number(initial));
 
-    const actualizaCantidad = function (operacion) {
-        let stock = Number(props.stock);
-        cantidad = Number(cantidad);
-
-        console.log(cantidad);
-
-        if(cantidad > stock) {
-            setCantidad(stock);
-            console.info ("cantidad supera el stock!");
-            return;
-        }else if (cantidad < props.initial) {
-            console.info ("cantidad no puede ser menor que el valor inicial!");
-            setCantidad(props.initial);
-            return;
-        }else {
-            console.info ("valor correcto: incrementar o decrementar");
-            if(operacion=="agregar"){
-                setCantidad(cantidad + 1);
-            } else if(operacion=="quitar") {
-                setCantidad(cantidad - 1);
-            }
-        }
-
-    };
+    const actualizaCantidad = function (add) {
+        if ((stock>=cantidad+add) && (0 <= cantidad+add+add) ) setCantidad (cantidad+add);
+    }
 
     return (
         <Row>
@@ -77,7 +56,7 @@ const ItemCount = (props) => {
                                 small
                                 node="button"
                                 waves="purple"
-                                onClick={() => actualizaCantidad ("quitar")}
+                                onClick={() => actualizaCantidad (-1)}
                             />
                         </Col>
 
@@ -100,7 +79,7 @@ const ItemCount = (props) => {
                                 small
                                 node="button"
                                 waves="purple"
-                                onClick={() => actualizaCantidad ("agregar")}
+                                onClick={() => actualizaCantidad (1)}
                             />
                         </Col>
                     </Row>
