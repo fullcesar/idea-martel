@@ -1,13 +1,11 @@
-import ItemListContainer from "./components/itemlistcont";
-import NavBar from "./components/navbar";
-import ItemCount from "./components/itemCount";
+import ItemListContainer from "./components/ItemListContainer";
+import NavBar from "./components/Navbar";
 
 function App() {
   return (
       <>
         <NavBar />
-        <ItemListContainer estilos={{'textAlign': 'center'}}>Tienda</ItemListContainer>
-        <ItemCount stock="10" initial="1" />
+        <ItemListContainer />
       </>
   );
 }

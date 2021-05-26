@@ -1,0 +1,50 @@
+const $productos = [
+    {
+        "productoId": 1001,
+        "productoCategoria": "Categoria A",
+        "productName": "Producto 1",
+        "productImage": "https://picsum.photos/400?image=780",
+        "productStock": true,
+        "productPrice": 200.00,
+    },
+    {
+        "productoId": 1002,
+        "productoCategoria": "Categoria B",
+        "productName": "Producto 2",
+        "productImage": "https://picsum.photos/400?image=871",
+        "productStock": true,
+        "productPrice": 150.00,
+    },
+    {
+        "productoId": 1003,
+        "productoCategoria": "Categoria A",
+        "productName": "Producto 3",
+        "productImage": "https://picsum.photos/400?image=888",
+        "productStock": true,
+        "productPrice": 700.00,
+    },
+    {
+        "productoId": 1004,
+        "productoCategoria": "Categoria B",
+        "productName": "Producto 4",
+        "productImage": "https://picsum.photos/400?image=430",
+        "productStock": true,
+        "productPrice": 1200.00,
+    },
+    {
+        "productoId": 1005,
+        "productoCategoria": "Categoria C",
+        "productName": "Producto 5",
+        "productImage": "https://picsum.photos/400?image=234",
+        "productStock": true,
+        "productPrice": 900.00,
+    },
+    {
+        "productoId": 1006,
+        "productoCategoria": "Categoria D",
+        "productName": "Producto 5",
+        "productImage": "https://picsum.photos/400?image=293",
+        "productStock": true,
+        "productPrice": 300.00,
+    }
+]
