@@ -1,6 +1,10 @@
 import 'materialize-css';
 import {Navbar, NavItem, Icon} from 'react-materialize';
-import CartWidget from './cartWidget';
+import CartWidget from './CartWidget';
+import {
+  Link, 
+  NavLink
+} from "react-router-dom";
 
 import "../assets/css/navbar.css";
 
@@ -9,7 +13,7 @@ const NavBar = ({ props }) => {
     <Navbar
       className="mi-nav"
       alignLinks="right"
-      brand={<a className="brand-logo" href="#!">Mi Tienda <Icon medium>local_mall</Icon></a>}
+      brand={<a className="brand-logo" href="/">Mi Tienda <Icon medium>local_mall</Icon></a>}
       centerChildren
       id="mobile-nav"
       menuIcon={<Icon>menu</Icon>}
@@ -25,19 +29,29 @@ const NavBar = ({ props }) => {
         preventScrolling: true
       }}
     >
-      <NavItem href="#!">
+      
+      <NavItem to="/">
         Inicio
       </NavItem>
-      <NavItem href="#!">
-        Productos
+
+      <NavItem to="/categoria/A">
+        Categoria A
       </NavItem>
-      <NavItem href="#!">
-        Nosotros
+
+      <NavItem to="/categoria/B">
+        Categoria B
       </NavItem>
-      <NavItem href="#!">
-        Contacto
+
+      <NavItem to="/categoria/C">
+        Categoria C
       </NavItem>
+
+      <NavItem to="/categoria/D">
+        Categoria D
+      </NavItem>
+      
       <CartWidget />
+
     </Navbar>
   )
 }

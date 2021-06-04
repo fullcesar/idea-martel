@@ -6,6 +6,7 @@ const $productos = [
         "productImage": "https://picsum.photos/400?image=780",
         "productStock": true,
         "productPrice": 200.00,
+        "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac consectetur ante. Vivamus nec rutrum nibh. Praesent fringilla in dolor ac tincidunt. Morbi sed tellus ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eros mi, posuere at placerat non, molestie a libero. Suspendisse imperdiet."
     },
     {
         "productoId": 1002,
@@ -14,6 +15,7 @@ const $productos = [
         "productImage": "https://picsum.photos/400?image=871",
         "productStock": true,
         "productPrice": 150.00,
+        "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac consectetur ante. Vivamus nec rutrum nibh. Praesent fringilla in dolor ac tincidunt. Morbi sed tellus ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eros mi, posuere at placerat non, molestie a libero. Suspendisse imperdiet."
     },
     {
         "productoId": 1003,
@@ -22,6 +24,7 @@ const $productos = [
         "productImage": "https://picsum.photos/400?image=888",
         "productStock": true,
         "productPrice": 700.00,
+        "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac consectetur ante. Vivamus nec rutrum nibh. Praesent fringilla in dolor ac tincidunt. Morbi sed tellus ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eros mi, posuere at placerat non, molestie a libero. Suspendisse imperdiet."
     },
     {
         "productoId": 1004,
@@ -30,6 +33,7 @@ const $productos = [
         "productImage": "https://picsum.photos/400?image=430",
         "productStock": true,
         "productPrice": 1200.00,
+        "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac consectetur ante. Vivamus nec rutrum nibh. Praesent fringilla in dolor ac tincidunt. Morbi sed tellus ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eros mi, posuere at placerat non, molestie a libero. Suspendisse imperdiet."
     },
     {
         "productoId": 1005,
@@ -38,13 +42,24 @@ const $productos = [
         "productImage": "https://picsum.photos/400?image=234",
         "productStock": true,
         "productPrice": 900.00,
+        "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac consectetur ante. Vivamus nec rutrum nibh. Praesent fringilla in dolor ac tincidunt. Morbi sed tellus ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eros mi, posuere at placerat non, molestie a libero. Suspendisse imperdiet."
     },
     {
         "productoId": 1006,
         "productoCategoria": "Categoria D",
-        "productName": "Producto 5",
+        "productName": "Producto 6",
         "productImage": "https://picsum.photos/400?image=293",
         "productStock": true,
         "productPrice": 300.00,
-    }
+        "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac consectetur ante. Vivamus nec rutrum nibh. Praesent fringilla in dolor ac tincidunt. Morbi sed tellus ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eros mi, posuere at placerat non, molestie a libero. Suspendisse imperdiet."
+    },
+    {
+        "productoId": 1007,
+        "productoCategoria": "Categoria B",
+        "productName": "Producto 7",
+        "productImage": "https://picsum.photos/400?image=490",
+        "productStock": true,
+        "productPrice": 100.00,
+        "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac consectetur ante. Vivamus nec rutrum nibh. Praesent fringilla in dolor ac tincidunt. Morbi sed tellus ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eros mi, posuere at placerat non, molestie a libero. Suspendisse imperdiet."
+    },
 ]

@@ -1,10 +1,16 @@
 import React from 'react';
 import 'materialize-css';
 import {Icon, Card, Row, Col, CardTitle, Button, TextInput, Chip} from 'react-materialize';
+import {
+    Link, 
+    NavLink
+  } from "react-router-dom";
 
 import "../assets/css/product-card.css";
 
 const Item = (props) => {
+
+    console.log(props);
     
     const [cantidad, setCantidad] = React.useState(props.initial);
 
@@ -43,10 +49,9 @@ const Item = (props) => {
                 </>
             ]}
             closeIcon={<Icon>close</Icon>}
-            header={<CardTitle image={props.imagen}>{props.nombre}</CardTitle>}
+            header={<Link to={`/item/${props.pid}`}><CardTitle image={props.imagen}>{props.nombre}</CardTitle></Link>}
             revealIcon={<Icon>more_vert</Icon>}
             >
-                
                 <Row className="contadorCont">
                     <Col
                         s={4}
