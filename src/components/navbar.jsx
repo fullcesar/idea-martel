@@ -1,9 +1,8 @@
 import 'materialize-css';
-import {Navbar, NavItem, Icon} from 'react-materialize';
+import {Navbar, Icon} from 'react-materialize';
 import CartWidget from './CartWidget';
 import {
-  Link, 
-  NavLink
+  Link
 } from "react-router-dom";
 
 import "../assets/css/navbar.css";
@@ -30,25 +29,25 @@ const NavBar = ({ props }) => {
       }}
     >
       
-      <NavItem to="/">
+      <Link to="/">
         Inicio
-      </NavItem>
+      </Link>
 
-      <NavItem to="/categoria/A">
+      <Link to="/categoria/categoria-a">
         Categoria A
-      </NavItem>
+      </Link>
 
-      <NavItem to="/categoria/B">
+      <Link to="/categoria/categoria-b">
         Categoria B
-      </NavItem>
+      </Link>
 
-      <NavItem to="/categoria/C">
+      <Link to="/categoria/categoria-c">
         Categoria C
-      </NavItem>
+      </Link>
 
-      <NavItem to="/categoria/D">
+      <Link to="/categoria/categoria-d">
         Categoria D
-      </NavItem>
+      </Link>
       
       <CartWidget />
 
